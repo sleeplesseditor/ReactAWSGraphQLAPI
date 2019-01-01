@@ -1,14 +1,32 @@
 {
-    "providers": {
-        "awscloudformation": {
-            "AuthRoleName": "restaurantapp-20190101224219-authRole",
-            "UnauthRoleArn": "arn:aws:iam::687775289630:role/restaurantapp-20190101224219-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::687775289630:role/restaurantapp-20190101224219-authRole",
-            "Region": "eu-west-1",
-            "DeploymentBucketName": "restaurantapp-20190101224219-deployment",
-            "UnauthRoleName": "restaurantapp-20190101224219-unauthRole",
-            "StackName": "restaurantapp-20190101224219",
-            "StackId": "arn:aws:cloudformation:eu-west-1:687775289630:stack/restaurantapp-20190101224219/7f0b30e0-0e16-11e9-a79f-0a675d25b48e"
-        }
-    }
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "restaurantapp-20190101224219-authRole",
+			"UnauthRoleArn": "arn:aws:iam::687775289630:role/restaurantapp-20190101224219-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::687775289630:role/restaurantapp-20190101224219-authRole",
+			"Region": "eu-west-1",
+			"DeploymentBucketName": "restaurantapp-20190101224219-deployment",
+			"UnauthRoleName": "restaurantapp-20190101224219-unauthRole",
+			"StackName": "restaurantapp-20190101224219",
+			"StackId": "arn:aws:cloudformation:eu-west-1:687775289630:stack/restaurantapp-20190101224219/7f0b30e0-0e16-11e9-a79f-0a675d25b48e"
+		}
+	},
+	"api": {
+		"restaurantapp": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY",
+				"GraphQLAPIIdOutput": "i7ud5s77xngixpignfsh53nbhe",
+				"GraphQLAPIEndpointOutput": "https://soocxtyp3zhljgi7ldvwrlof4y.appsync-api.eu-west-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-f4qj2xieafakdcvkkl6n6cgzja"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/restaurantapp-20190101224219-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apirestaurantapp"
+			},
+			"lastPushTimeStamp": "2019-01-01T22:50:30.465Z",
+			"lastPushDirHash": "WI40Ao6o3htGd0iq0mZqRLCDbK8="
+		}
+	}
 }

@@ -16,8 +16,17 @@
 			"service": "AppSync",
 			"providerPlugin": "awscloudformation",
 			"output": {
-				"securityType": "API_KEY"
-			}
+				"securityType": "API_KEY",
+				"GraphQLAPIIdOutput": "i7ud5s77xngixpignfsh53nbhe",
+				"GraphQLAPIEndpointOutput": "https://soocxtyp3zhljgi7ldvwrlof4y.appsync-api.eu-west-1.amazonaws.com/graphql",
+				"GraphQLAPIKeyOutput": "da2-f4qj2xieafakdcvkkl6n6cgzja"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/restaurantapp-20190101224219-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apirestaurantapp"
+			},
+			"lastPushTimeStamp": "2019-01-01T22:50:30.465Z",
+			"lastPushDirHash": "WI40Ao6o3htGd0iq0mZqRLCDbK8="
 		}
 	}
 }
