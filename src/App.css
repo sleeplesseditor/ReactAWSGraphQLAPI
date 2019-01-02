@@ -27,6 +27,24 @@
   margin-right: 10px;
 }
 
+.submit_button {
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #eee;
+  background-color: #ff2d2d;
+  padding: 10px 30px;
+  margin-top: 10;
+  text-transform: uppercase;
+  transition: all .2s;
+}
+
+.submit_button:hover {
+  background-color: #bd0505;
+  transform: scale(1.1);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
